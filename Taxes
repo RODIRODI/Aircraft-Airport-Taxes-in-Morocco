@@ -1,0 +1,460 @@
+ <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+</style>
+
+<script>
+function tableau2()
+{
+
+var array  =[["Basic handling fee",Handling],
+         ["Concession fee",Concession],
+          ["Basic Supervision fee" , Supervision],
+["G P U use " ," €100.00/ Hour"],
+
+    ["Supervision fee", Supervision]],
+
+
+table = document.getElementById("table2");
+
+for (var i=1; i<array.length;i++)
+{ var newRow=table .insertRow(table .length);
+for(var j=0;j<table .rows[i].cells.length;j++)
+{table .rows[i].cells[j].innerHTML=array[i-1][j];}}
+
+
+
+}
+
+</script>
+
+<script>
+ 
+    function displayquote() {
+       
+            document.getElementById('quote').style.visibility = 'visible';
+     
+    }
+</script>
+
+
+<script>
+function tableau()
+{
+
+
+
+
+var array  =[["Landing",  "Per movement", Landing],
+         ["Parking",  "Per day",Parking],
+          ["Approach" , "Per movement",Approach],
+          ["Lighting" , "Per use",Lighting],
+        ["Pax Tax (Dest: Europe & Africa)" , "Per pap",paxeu]  ,
+       ["Pax Tax (Dest: America & M.East)" , "Per pap",paxus]  ,
+  ["Lighting", "if used",Lighting]],
+
+
+table= document.getElementById("table");
+
+
+
+for (var i=1; i<array.length;i++)
+{ var newRow=table.insertRow(table.length);
+for(var j=0;j<table.rows[i].cells.length;j++)
+{table.rows[i].cells[j].innerHTML=array[i-1][j];}}
+
+
+
+}
+
+</script>
+
+<div id="quote">
+
+<script>
+ document.getElementById('quote').style.visibility = 'hidden';
+</script>
+
+<div  class="page" id="format" >
+
+
+<p>Dear on duty,<br/><br/>
+ 
+
+
+ Kindly find here after the requested quotation for xxxxxxx / MTOW xxxxxx  operating at  <b>G---</b>  :
+
+ 
+<br/>
+</p>
+
+<h3> Applicable Airport Taxes  :</h3>
+<table id="table">
+  <tr>
+    <th>Tax name</th>
+
+<th>Unit</th>
+    
+     <th>Fee in "MAD"</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+   
+    
+
+
+
+  </tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+   
+    
+
+
+
+  </tr>
+
+
+  <tr>
+  
+    <td></td>
+    <td></td>
+    <td></td>
+
+    
+
+  </tr>
+  <tr>
+  
+  
+    <td></td>
+    <td></td>
+    <td></td>
+   
+
+  </tr>
+ 
+  <tr>
+
+    <td></td>
+    <td></td>
+    <td></td>
+
+    
+
+  </tr>
+
+<tr>
+
+    <td></td>
+    <td></td>
+    <td></td>
+
+    
+
+  </tr>
+
+
+</table>
+
+<h3> Ground Handling Services  :</h3>
+<table id="table2">
+  <tr>
+    <th> </th>
+<th>Fee in € </th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+   </tr>
+<tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+      <td></td>
+    <td></td>
+   </tr>
+<tr>
+      <td></td>
+    <td></td>
+   </tr>
+</table> 
+
+ 
+
+<h3> Stars Commission  :</h3>
+
+<table id="tabledis">
+  <tr>
+
+<th>Disbursement </th>
+ <th>   &ensp;   &ensp;      &ensp;   &ensp;   7.5 %          </th> 
+
+  </tr>
+ </table>
+
+
+
+<br/>
+
+<span style="text-decoration: underline;">GSE and Services including the Ground Handling Services Charge (Full Package-UNLIMITED USE) :</span>
+
+
+
+<p>- Tarctors - Dollis - Belt loader<br/>
+- PAX/CREW Ramp transportation<br/>
+- PAX/ Crew Assistance thru immigration (CIQ)- Fast Track<br/>
+- Cabin Interior cleaning<br/>
+- Toilet services- Potable water<br/>
+- Chocks - Icons<br/>
+- Marshaling<br/>
+- Waste Disposal<br/>
+- Documents Printing<br/>
+- Communication & Coordination<br/>
+
+</p>
+
+
+<h4>Hope we reach your expectations.
+</h4>
+
+
+</div>
+
+
+</div >
+
+
+<script>
+
+displayquote();
+
+  
+      var M = prompt("Please introduce the MTOW  (in Tons) ?");
+
+ 
+ 
+
+ if ((M<=12) && (M>0))
+
+  { 
+
+ var Landing =Math.ceil(M)*26*100/100; 
+        var Parking =Math.round(Math.ceil(M)*(12.4)*100)/100; 
+    var Approach =Math.round(Math.sqrt(Math.ceil(M))*90*100)/100; 
+    
+
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+
+var Concession=36; 
+var Supervision=180;
+var Handling=129;
+
+tableau();
+tableau2();
+
+
+  }
+
+ else if ((M>12) && (M<26)) 
+  { 
+   if (M<=19){var Handling=129;var Concession=36;
+      var Supervision=180;}  else {var Handling=266;var Concession=49;
+      var Supervision=180;}     
+           
+
+    var Landing =Math.ceil(M)*26*100/100; 
+        var Parking =Math.round(Math.ceil(M)*(12.4)*100)/100; 
+  var Approach =Math.round(Math.sqrt(Math.ceil(M))*150*100)/100; 
+ 
+ 
+
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+
+
+
+tableau();
+tableau2();
+ 
+  }
+
+else if ((M>25) && (M<51))
+
+  { 
+ if (M<=30){var Handling=266;var Concession=49;
+      var Supervision=180;}  else if (M<=40) {var Handling=476;var Concession=84;
+      var Supervision=200;}  
+else {var Handling=516;var Concession=84;
+      var Supervision=200;}  
+                          
+
+
+ var Landing =Math.ceil(M)*53*100/100-675; 
+        var Parking =Math.round(Math.ceil(M)*(12.4)*100)/100; 
+ var Approach =Math.round(Math.sqrt(Math.ceil(M))*245*100)/100; 
+
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+
+tableau();tableau2();
+
+ 
+  }
+
+
+
+else if ((M>50) && (M<76))
+
+  { 
+  if (M<=60){var Handling=711;var Concession=84;
+      var Supervision=250;}  else if ((M<=70)&&(M>60)) {var Handling=685;var Concession=110; var Supervision=250;}  
+ else {var Handling=985;var Concession=110; var Supervision=250;}     
+                           
+
+
+      var Landing =Math.ceil(M)*53*100/100-675;  
+    var Parking =Math.round(Math.ceil(M)*(7.2)*100)/100+260; 
+ var Approach =Math.round(Math.sqrt(Math.ceil(M))*245*100)/100;  
+    
+
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+
+tableau();tableau2();
+
+
+  }
+
+
+
+
+
+else if ((M>75) && (M<126))
+
+  { 
+
+if (M<=80){var Handling=985;var Concession=110;
+      var Supervision=250;}  else if ((M<=100)&&(M>80)) {var Handling=1090;var Concession=110; var Supervision=300;}  
+ else {var Handling=1302;var Concession=158; var Supervision=300;}     
+
+                var Landing =Math.ceil(M)*79*100/100-2625; 
+                           var Parking =Math.round(Math.ceil(M)*(7.2)*100)/100+260; 
+                    var Approach =Math.round(Math.sqrt(Math.ceil(M))*245*100)/100;   
+
+
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+
+tableau();tableau2();
+
+
+  }
+
+
+
+
+else if ((M>125) && (M<201))
+
+  { 
+
+  if (M<=130){var Handling=1302;var Concession=158;
+      var Supervision=300;}  else if ((M<=150)&&(M>130)) {var Handling=1392;var Concession=158; var Supervision=300;}  
+ else if ((M<=180)&&(M>150)) {var Handling=1592;var Concession=158; var Supervision=350;}     
+ else if ((M<=200)&&(M>180)) {var Handling=1767;var Concession=158; var Supervision=350;} 
+
+                var Landing =Math.ceil(M)*79*100/100-2625; 
+                           var Parking =Math.round(Math.ceil(M)*(7.2)*100)/100+260; 
+                      var Approach =Math.round(Math.sqrt(Math.ceil(M))*245*100)/100; 
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+
+tableau();tableau2();
+
+
+  }
+
+
+else if ((M>200) && (M<401))
+
+  { 
+  if (M<=230){var Handling=1937;var Concession=228;
+      var Supervision=350;}  else if ((M<=300)&&(M>230)) {var Handling=2347;var Concession=228; var Supervision=400;}  
+     else {var Handling=3065;var Concession=300; var Supervision=400;} 
+
+
+
+                var Landing =Math.ceil(M)*79*100/100-2625; 
+                           var Parking =Math.round(Math.ceil(M)*(7.2)*100)/100+260; 
+                  var Approach =Math.round(Math.sqrt(Math.ceil(M))*245*100)/100; 
+
+var Lighting=479;
+var paxeu  =93;
+var paxus =137;
+tableau();tableau2();
+
+
+  }
+
+else {alert("You are introducing a wrong number !!\r"+" MTOW should be less than 400 tons"); 
+window.location.href = 'http://jamal-r.blogspot.com/p/test-aircraft-mtow-display.html'}
+
+
+
+ 
+
+
+
+</script>
+
+
+ 
+
+
+
