@@ -1,4 +1,4 @@
-<script>
+
 function tableau2()
 {
 
@@ -62,7 +62,7 @@ for(var j=0;j<table.rows[i].cells.length;j++)
 
 }
 
-</script>
+
 
 
 
