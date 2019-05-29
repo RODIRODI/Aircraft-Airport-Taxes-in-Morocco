@@ -64,8 +64,5 @@ for(var j=0;j<table.rows[i].cells.length;j++)
 
 </script>
 
-<div id="quote">
 
-<script>
- document.getElementById('quote').style.visibility = 'hidden';
-</script>
+
