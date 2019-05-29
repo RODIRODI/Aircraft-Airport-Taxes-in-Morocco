@@ -67,7 +67,7 @@ for(var j=0;j<table.rows[i].cells.length;j++)
  function taxe()
 
 {
-var M = prompt("Please introduce the MTOW  (in Tons) ?");
+
          
  if ((M<=12) && (M>0))
 
