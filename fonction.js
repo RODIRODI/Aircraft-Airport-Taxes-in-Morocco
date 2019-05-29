@@ -1,4 +1,16 @@
 
+
+displayquote();
+    
+var M = prompt("Please introduce the MTOW  (in Tons) ?");
+    
+taxe();
+ 
+
+
+
+
+
 function tableau2()
 {
 
