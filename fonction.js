@@ -21,19 +21,19 @@ for(var j=0;j<table .rows[i].cells.length;j++)
 
 }
 
-</script>
 
-<script>
+
+
  
     function displayquote() {
        
             document.getElementById('quote').style.visibility = 'visible';
      
     }
-</script>
 
 
-<script>
+
+
 function tableau()
 {
 
