@@ -3,8 +3,7 @@
 
 {
     
-const M = prompt("Please introduce the MTOW  (in Tons) ?");
-         
+
  if ((M<=12) && (M>0))
 
   { 
