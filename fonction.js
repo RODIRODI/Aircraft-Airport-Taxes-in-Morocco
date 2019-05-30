@@ -1,9 +1,4 @@
 
- function taxe()
-
-{
-    
-
  if ((M<=12) && (M>0))
 
   { 
@@ -177,19 +172,7 @@ window.location.href = 'http://jamal-r.blogspot.com/p/test-aircraft-mtow-display
 
 
 
- 
 
-
-
-
-
-
- 
-
-
-
-
-}
 
 
 
